@@ -1,0 +1,23 @@
+{
+  "name": "metalsmith-demo-empty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitmishra209/metalsmith-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "metalsmith": "^2.3.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-templates": "^0.7.0"
+  }
+}
