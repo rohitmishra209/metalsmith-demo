@@ -13,6 +13,7 @@
 	<h2>{{first_name}}</h2>
 	<h3>{{uid}}</h2>
 	<p>{{details}}</p>
+	 <img src="{{banner_image.url}}">
 
 {{/each}}
 
