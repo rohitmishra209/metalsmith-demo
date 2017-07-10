@@ -31,7 +31,7 @@ Metalsmith(__dirname)
           //responseres.render("/src/pages/about.md", body)
             if(error)
                 return error;
-            console.log('@body', JSON.stringify(body));
+           // console.log('@body', JSON.stringify(body));
             var fileNames = Object.keys(files);
 
             for(var i = 0, j = fileNames.length; i < j; i++) {
