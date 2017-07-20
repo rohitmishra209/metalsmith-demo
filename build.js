@@ -27,12 +27,47 @@ Metalsmith(__dirname)
             },
             json: true
         }, function (error, response, body) {
-            //console.log("body",files)
+           /* console.log("body",body)
+            return*/
           //responseres.render("/src/pages/about.md", body)
             if(error)
                 return error;
            // console.log('@body', JSON.stringify(body));
             var fileNames = Object.keys(files);
+            /* console.log("scndhjbcvhfjvfv",fileNames)
+             return 0;*/
+
+
+            for(var i = 0, j = fileNames.length; i < j; i++) {
+                if(fileNames[i] === 'content/index.md') {
+                 files[fileNames[i]].entries = body.entries                   
+                    
+               }
+            }
+            done();
+        })
+    })
+
+    .use(function (files, metalsmith, done) {
+        request({
+            url: 'https://api.contentstack.io/v3/content_types/about_us/entries',
+            method: 'GET',
+            headers: {
+                api_key: "blt9bab903dad20cd9f",
+                access_token: "blt71ae48555567eceb"
+            },
+            json: true
+        }, function (error, response, body) {
+            /*console.log("body",body)
+            return*/
+          //responseres.render("/src/pages/about.md", body)
+            if(error)
+                return error;
+           // console.log('@body', JSON.stringify(body));
+            var fileNames = Object.keys(files);
+             /*console.log("scndhjbcvhfjvfv",fileNames)
+             return 0;*/
+
 
             for(var i = 0, j = fileNames.length; i < j; i++) {
                 if(fileNames[i] === 'content/pages/about.md') {
@@ -43,6 +78,7 @@ Metalsmith(__dirname)
             done();
         })
     })
+
     .use(markdown())
     .use(permalinks({
         pattern: ':collections/:title'

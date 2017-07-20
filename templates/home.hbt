@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -13,4 +13,23 @@
     </div>
 
 </body>
-</html>
+</html> -->
+
+{{> header}}
+
+<h2>{{title}}</h2>
+
+<article>
+    {{{contents}}}
+</article>
+
+{{#each entries}}
+
+	<h1>{{title}}</h1>
+	<h2>{{first_name}}</h2>
+	  {{{details}}}
+	 <img src="{{banner_image.url}}">
+
+{{/each}}
+
+{{> footer}}

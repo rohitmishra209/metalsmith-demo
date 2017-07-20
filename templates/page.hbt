@@ -5,15 +5,13 @@
 <article>
     {{{contents}}}
 </article>
-<h1>{{rohit}}</h1>
 
 {{#each entries}}
 
-	<h1>{{title}}</h1>
-	<h2>{{first_name}}</h2>
-	<h3>{{uid}}</h2>
-	<p>{{details}}</p>
-	 <img src="{{banner_image.url}}">
+	<h1>{{content_title}}</h1>
+	<h2>{{content_name}}</h2>
+	{{{details}}}
+	<img src="{{image.url}}">
 
 {{/each}}
 
