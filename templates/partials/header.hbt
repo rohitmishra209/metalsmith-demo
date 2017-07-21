@@ -6,7 +6,7 @@
         <title>Metalsmith Demo Site</title>
 
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="styles/main.css" type="text/css" />
+        <link rel="stylesheet" href="../../../styles/main.css" type="text/css" />
     </head>
     <body>
 

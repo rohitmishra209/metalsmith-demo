@@ -39,7 +39,7 @@ Metalsmith(__dirname)
 
 
             for(var i = 0, j = fileNames.length; i < j; i++) {
-                if(fileNames[i] === 'content/index.md') {
+                if(fileNames[i] === 'content/pages/index.md') {
                  files[fileNames[i]].entries = body.entries                   
                     
                }
